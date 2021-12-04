@@ -1,0 +1,192 @@
+@media only screen and (min-width: 568px) {
+  .footer-links {
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
+    grid-auto-flow: column;
+  }
+
+  .hero-section-button {
+    font-size: 1.4rem;
+  }
+  
+  .cta-button {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 812px) {
+  header {
+    height: 120px;
+    background-image: url('../images/bg-hero-desktop.svg');
+  }
+
+  header img {
+    width: 150px;
+    height: 25px;
+  }
+
+  header button {
+    width: 150px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .hero-section {
+    height: 100%;
+    background-image: url('../images/bg-hero-desktop.svg');
+    background-position: 0px -120px;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
+  header img {
+    width: 200px;
+    height: 32px;
+    margin-top: 57px;
+  }
+
+  header button {
+    width: 200px;
+    height: 48px;
+    font-size: 1.4rem;
+    margin-top: 48px;
+  }
+  
+  .hero-section h1 {
+    font-size: 4rem;
+    line-height: 6rem;
+    margin: 0 203px 50px;
+  }
+
+  .hero-section p {
+    font-size: 1.9rem;
+    line-height: 2.7rem;
+    margin-bottom: 35px;
+  }
+
+  .hero-section-button {
+    width: 280px;
+    height: 56px;
+  }
+
+  .hero-section img {
+    width: 680px;
+    height: 482px;
+  }
+
+  .complementary-info {
+    padding-top: 160px;
+  }
+
+  .complementary-info-container, .complementary-info-container__reverse {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: 
+    "h2 img" 
+    "p img";
+    align-items: center;
+    max-width: 1232px;
+    height: 440px;
+    gap: 30px 90px;
+  }
+  
+  .complementary-info-container__reverse {
+    grid-template-areas: 
+    "img h2"
+    "img p";
+  }
+
+  .complementary-info-container img {
+    grid-area: img;
+    width: 420px;
+    height: 345px;
+    margin-bottom: 0;
+  }
+
+  .complementary-info-container h2 {
+    grid-area: h2;
+    align-self: end;
+    font-size: 2.9rem;
+    margin-bottom: 0;
+  }
+
+  .complementary-info-container p {
+    grid-area: p;
+    align-self: start;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    text-align: left;
+  }
+
+  .floating-call-to-action-container {
+    height: 273px;
+  }
+
+  .floating-call-to-action {
+    width: 800px;
+    height: 280px;
+    bottom: -80px;
+  }
+
+  .floating-call-to-action h2 {
+    font-size: 3.3rem;
+    margin-bottom: 40px;
+  }
+
+  .cta-button {
+    width: 400px;
+    height: 80px;
+    font-size: 2rem;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+    "logo ."
+    "contact links"
+    "social social"
+    "copyright copyright"
+    "attribution attribution";
+    padding: 192px 0 50px;
+  }
+
+  .footer-logo {
+    grid-area: logo;
+    width: 240px;
+    margin-top: 0;
+  }
+
+  .footer-contact-info {
+    grid-area: contact;
+  }
+
+  .footer-location p, .footer-phone p, .footer-email p {
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+  }
+
+  .footer-links {
+    grid-area: links;
+  }
+  
+  .footer-links a {
+    font-size: 1.9rem;
+  }
+
+  .footer-social-icons {
+    grid-area: social;
+  }
+
+  .footer-copyright {
+    grid-area: copyright;
+  }
+
+  .attribution {
+    grid-area: attribution;
+  }
+}
