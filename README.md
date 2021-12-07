@@ -46,7 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-Iat can be really difficult to use the same image for the header and the main section. 
+It can be really difficult to use the same image for the header and the main section. 
 
 ### Continued development
 
