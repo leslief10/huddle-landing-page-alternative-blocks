@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-
+- Live Site URL: [Huddle landing page with alternating feature blocks](https://leslief10.github.io/huddle-landing-page-alternative-blocks/)
 
 ## My process
 
