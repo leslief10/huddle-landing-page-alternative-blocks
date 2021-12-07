@@ -41,6 +41,10 @@
 
 @media only screen and (min-width: 1024px) {
 
+  header {
+    padding: 0 80px;
+  }
+
   header img {
     width: 200px;
     height: 32px;
@@ -111,6 +115,7 @@
     align-self: end;
     font-size: 2.9rem;
     margin-bottom: 0;
+    text-align: left;
   }
 
   .complementary-info-container p {
@@ -144,7 +149,7 @@
 
   footer {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, auto);
     grid-template-areas: 
     "logo ."
@@ -152,7 +157,8 @@
     "social social"
     "copyright copyright"
     "attribution attribution";
-    padding: 192px 0 50px;
+    column-gap: 80px;
+    padding: 192px 80px 50px 120px;
   }
 
   .footer-logo {
@@ -180,6 +186,7 @@
 
   .footer-social-icons {
     grid-area: social;
+    justify-self: center;
   }
 
   .footer-copyright {
@@ -188,5 +195,68 @@
 
   .attribution {
     grid-area: attribution;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "h1 img"
+    "p img"
+    "button img";
+    padding: 47px 77px 70px 80px;
+  }
+
+  .hero-section h1 {
+    grid-area: h1;
+    margin: 150px 80px 50px 0;
+    text-align: left;
+  }
+
+  .hero-section p {
+    grid-area: p;
+    margin-right: 80px;
+    text-align: left;
+  }
+
+  .hero-section-button {
+    grid-area: button;
+  }
+
+  .hero-section img {
+    grid-area: img;
+  }
+
+  .complementary-info-container {
+    column-gap: 160px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero-section {
+    padding-right: 90px;
+  }
+
+  footer {
+    grid-template-columns: 1fr 320px 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "logo . ."
+    "contact links social"
+    ". . copyright"
+    ". attribution .";
+    column-gap: 100px;
+  }
+
+  .footer-links {
+    column-gap: 105px;
+  }
+
+  .footer-links, .footer-social-icons {
+    align-self: flex-start;
+    margin-top: 8px;
   }
 }
